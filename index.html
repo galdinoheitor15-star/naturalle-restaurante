@@ -145,7 +145,7 @@
       <div class="wrap order__tools">
         <label class="search">
           <span class="sr">Buscar no cardápio</span>
-          <input type="search" placeholder="Buscar prato, ingrediente…" data-search autocomplete="off">
+          <input maxlength="60" type="search" placeholder="Buscar prato, ingrediente…" data-search autocomplete="off">
         </label>
         <button class="chip" type="button" aria-pressed="false" data-filter-light>Low carb e sem glúten</button>
       </div>
@@ -247,15 +247,15 @@
             <label><input type="radio" name="mode" value="entrega" checked data-f="mode"><span>Entrega</span></label>
             <label><input type="radio" name="mode" value="retirada" data-f="mode"><span>Retirar no local</span></label>
           </fieldset>
-          <label class="field"><span>Seu nome</span><input required autocomplete="name" data-f="name"></label>
-          <label class="field"><span>WhatsApp</span><input required inputmode="tel" autocomplete="tel" placeholder="(81) 9 0000-0000" data-f="phone"></label>
+          <label class="field"><span>Seu nome</span><input maxlength="80" required autocomplete="name" data-f="name"></label>
+          <label class="field"><span>WhatsApp</span><input maxlength="20" required inputmode="tel" autocomplete="tel" placeholder="(81) 9 0000-0000" data-f="phone"></label>
           <div class="addr" data-addr>
-            <label class="field"><span>Rua e número</span><input required autocomplete="street-address" data-f="street"></label>
+            <label class="field"><span>Rua e número</span><input maxlength="120" required autocomplete="street-address" data-f="street"></label>
             <div class="field-row">
-              <label class="field"><span>Bairro</span><input required data-f="hood"></label>
-              <label class="field"><span>Complemento</span><input data-f="extra" placeholder="Opcional"></label>
+              <label class="field"><span>Bairro</span><input maxlength="60" required data-f="hood"></label>
+              <label class="field"><span>Complemento</span><input maxlength="100" data-f="extra" placeholder="Opcional"></label>
             </div>
-            <label class="field"><span>Ponto de referência</span><input data-f="ref" placeholder="Opcional"></label>
+            <label class="field"><span>Ponto de referência</span><input maxlength="100" data-f="ref" placeholder="Opcional"></label>
           </div>
           <label class="field">
             <span>Quando</span>
@@ -271,7 +271,7 @@
             <label><input type="radio" name="pay" value="Cartão na entrega" data-f="pay"><span>Cartão na entrega</span></label>
             <label><input type="radio" name="pay" value="Dinheiro" data-f="pay"><span>Dinheiro</span></label>
           </fieldset>
-          <label class="field" data-change hidden><span>Troco para quanto?</span><input inputmode="decimal" placeholder="Ex.: 100" data-f="change"></label>
+          <label class="field" data-change hidden><span>Troco para quanto?</span><input maxlength="12" inputmode="decimal" placeholder="Ex.: 100" data-f="change"></label>
           <div class="summary" data-summary></div>
         </section>
 
